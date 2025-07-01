@@ -3,7 +3,7 @@
 ![N8N](https://img.shields.io/badge/N8N-Automation-blue) ![Docker](https://img.shields.io/badge/Docker-Containerized-blue) ![SSL](https://img.shields.io/badge/SSL-Auto-green) ![API](https://img.shields.io/badge/News%20API-FastAPI-red) ![Telegram](https://img.shields.io/badge/Telegram-Backup-orange)
 
 > 🎥 **HÃY ĐĂNG KÝ KÊNH YOUTUBE ĐỂ ỦNG HỘ MÌNH NHÉ!** 👈  
-> **[👉 ĐĂNG KÝ NGAY TẠI ĐÂY](https://www.youtube.com/@kalvinthiensocial?sub_confirmation=1)** để không bỏ lỡ video hướng dẫn mới nhất! 🔔
+> **[👉 ĐĂNG KÝ NGAY TẠI ĐÂY](https://www.youtube.com/@MakeMastery88?sub_confirmation=1)** để không bỏ lỡ video hướng dẫn mới nhất! 🔔
 
 Script tự động cài đặt **N8N Workflow Automation** với đầy đủ tính năng mở rộng 2025, bao gồm:
 - **🤖 N8N** với FFmpeg, yt-dlp, Puppeteer
@@ -15,12 +15,12 @@ Script tự động cài đặt **N8N Workflow Automation** với đầy đủ t
 
 ## 👨‍💻 Thông Tin Tác Giả
 
-**🌟 Nguyễn Ngọc Thiện**
-- 📺 **YouTube**: [Kalvin Thien Social](https://www.youtube.com/@kalvinthiensocial?sub_confirmation=1) - **🔔 ĐĂNG KÝ ĐỂ ỦNG HỘ!**
+**🌟 Trần Văn Nguyên**
+- 📺 **YouTube**: [Make Mastery](https://www.youtube.com/@MakeMastery88?sub_confirmation=1) - **🔔 ĐĂNG KÝ ĐỂ ỦNG HỘ!**
 - 📘 **Facebook**: [Ban Thien Handsome](https://www.facebook.com/Ban.Thien.Handsome/)
-- 📱 **Zalo/Phone**: 08.8888.4749
-- 🎬 **N8N Playlist**: [N8N Tutorials](https://www.youtube.com/@kalvinthiensocial/playlists)
-- 🚀 **Cập nhật**: 27/12/2024
+- 📱 **Zalo/Phone**: https://zalo.me/g/pyfonl955
+- 🎬 **N8N Playlist**: [N8N Tutorials]
+- 🚀 **Cập nhật**: 01/07/2025
 
 > 💡 **Nếu script này hữu ích, đừng quên:**  
 > ⭐ **Star** repository này  
@@ -89,13 +89,13 @@ Script tự động cài đặt **N8N Workflow Automation** với đầy đủ t
 ### 1️⃣ Một Lệnh Cài Đặt (Khuyến nghị)
 
 ```bash
-cd /tmp && curl -sSL https://raw.githubusercontent.com/KalvinThien/install-n8n-ffmpeg/main/auto_cai_dat_n8n.sh | tr -d '\r' > install_n8n.sh && chmod +x install_n8n.sh && sudo bash install_n8n.sh
+cd /tmp && curl -sSL https://raw.githubusercontent.com/trannguyenqx2/install-n8n-ffmpeg/main/auto_cai_dat_n8n.sh | tr -d '\r' > install_n8n.sh && chmod +x install_n8n.sh && sudo bash install_n8n.sh
 ```
 
 ### 2️⃣ Hoặc Download & Chạy
 
 ```bash
-wget https://raw.githubusercontent.com/KalvinThien/install-n8n-ffmpeg/main/auto_cai_dat_n8n.sh
+wget https://raw.githubusercontent.com/trannguyenqx2/install-n8n-ffmpeg/main/auto_cai_dat_n8n.sh
 chmod +x auto_cai_dat_n8n.sh
 sudo ./auto_cai_dat_n8n.sh
 ```

@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # =============================================================================
-# 🚀 SCRIPT CÀI ĐẶT N8N TỰ ĐỘNG 2025 - Bản dùng GPU
+# 🚀 SCRIPT CÀI ĐẶT N8N TỰ ĐỘNG 2025 
 # =============================================================================
-# Tác giả: Trần Văn Nguyên 
-# YouTube: https://www.youtube.com/@MakeMastery88
-# Zalo: https://zalo.me/g/pyfonl955
-# Cập nhật: 01/07/2025
+# Tác giả: Nguyễn Ngọc Thiện
+# YouTube: https://www.youtube.com/@kalvinthiensocial
+# Zalo: 08.8888.4749
+# Cập nhật: 30/06/2025
 #
 # ✨ TÍNH NĂNG MỚI
 #   - ☁️ Tích hợp Backup & Restore qua Google Drive (sử dụng rclone).
@@ -1345,13 +1345,6 @@ services:
       - ./files:/home/node/.n8n
       - ./files/youtube_content_anylystic:/data/youtube_content_anylystic
       - /var/run/docker.sock:/var/run/docker.sock:ro
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: all
-              capabilities: [gpu]
     networks:
       - n8n_network
 EOF
@@ -1410,13 +1403,6 @@ services:
       - ./files:/home/node/.n8n
       - ./files/youtube_content_anylystic:/data/youtube_content_anylystic
       - /var/run/docker.sock:/var/run/docker.sock:ro
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: all
-              capabilities: [gpu]
     networks:
       - n8n_network
 
@@ -2296,10 +2282,10 @@ show_final_summary() {
     fi
     
     echo -e "${CYAN}🚀 TÁC GIẢ:${NC}"
-    echo -e "  • Tên: ${WHITE}Trần Văn Nguyên${NC}"
-    echo -e "  • YouTube: ${WHITE}https://www.youtube.com/@MakeMastery88?sub_confirmation=1${NC}"
-    echo -e "  • Zalo: ${WHITE}https://zalo.me/g/pyfonl955${NC}"
-    echo -e "  • Cập nhật: ${WHITE}01/07/2025${NC}"
+    echo -e "  • Tên: ${WHITE}Nguyễn Ngọc Thiện${NC}"
+    echo -e "  • YouTube: ${WHITE}https://www.youtube.com/@kalvinthiensocial?sub_confirmation=1${NC}"
+    echo -e "  • Zalo: ${WHITE}08.8888.4749${NC}"
+    echo -e "  • Cập nhật: ${WHITE}30/06/2025${NC}"
     echo ""
     
     echo -e "${YELLOW}🎬 ĐĂNG KÝ KÊNH YOUTUBE ĐỂ ỦNG HỘ MÌNH NHÉ! 🔔${NC}"
