@@ -3,10 +3,10 @@
 # =============================================================================
 # 🚀 SCRIPT CÀI ĐẶT N8N TỰ ĐỘNG 2025 
 # =============================================================================
-# Tác giả: Nguyễn Ngọc Thiện
-# YouTube: https://www.youtube.com/@kalvinthiensocial
-# Zalo: 08.8888.4749
-# Cập nhật: 30/06/2025
+# Tác giả: Trần Văn Nguyên
+# YouTube: https://www.youtube.com/@MakeMastery88
+# Zalo: 09.8888.0550
+# Cập nhật: 13/07/2025
 #
 # ✨ TÍNH NĂNG MỚI
 #   - ☁️ Tích hợp Backup & Restore qua Google Drive (sử dụng rclone).
@@ -63,10 +63,10 @@ show_banner() {
     echo -e "${CYAN}║${WHITE} 🔑 Gỡ bỏ giới hạn Bearer Token (độ dài, ký tự đặc biệt)                   ${CYAN}║${NC}"
     echo -e "${CYAN}╠══════════════════════════════════════════════════════════════════════════════╣${NC}"
     echo -e "${CYAN}║${YELLOW} 👨‍💻 Tác giả: Trần Văn Nguyên (Original) & v0 (Upgraded)                  ${CYAN}║${NC}"
-    echo -e "${CYAN}║${YELLOW} 📺 YouTube: https://www.youtube.com/@kalvinthiensocial                  ${CYAN}║${NC}"
+    echo -e "${CYAN}║${YELLOW} 📺 YouTube: https://www.youtube.com/@MakeMastery88                  ${CYAN}║${NC}"
     echo -e "${CYAN}║${YELLOW} 📱 Zalo: 09.8888.0550                                                   ${CYAN}║${NC}"
     echo -e "${CYAN}║${YELLOW} 🎬 Đăng ký kênh để ủng hộ mình nhé! 🔔                                  ${CYAN}║${NC}"
-    echo -e "${CYAN}║${YELLOW} 📅 Cập nhật: 30/06/2025                                                 ${CYAN}║${NC}"
+    echo -e "${CYAN}║${YELLOW} 📅 Cập nhật: 13/07/2025                                                 ${CYAN}║${NC}"
     echo -e "${CYAN}╚══════════════════════════════════════════════════════════════════════════════╝${NC}"
     echo ""
 }
@@ -1325,7 +1325,7 @@ services:
       - N8N_PORT=5678
       - N8N_PROTOCOL=http
       - NODE_ENV=production
-      - WEBHOOK_URL=http://localhost:8888/
+      - WEBHOOK_URL=http://127.0.0.1:8888/
       - GENERIC_TIMEZONE=Asia/Ho_Chi_Minh
       - N8N_METRICS=true
       - N8N_LOG_LEVEL=info
