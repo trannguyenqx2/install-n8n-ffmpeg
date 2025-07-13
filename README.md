@@ -641,9 +641,9 @@ systemctl status cron                           # Cron jobs
 ### 💬 Nhận Hỗ Trợ
 
 - **🐛 Issues**: [GitHub Issues](https://github.com/KalvinThien/install-n8n-ffmpeg/issues)
-- **🎥 YouTube**: [Kalvin Thien Social](https://www.youtube.com/@kalvinthiensocial) - **ĐĂNG KÝ ĐỂ ỦNG HỘ!**
+- **🎥 YouTube**: [Kalvin Thien Social](https://www.youtube.com/@MakeMastery88) - **ĐĂNG KÝ ĐỂ ỦNG HỘ!**
 - **📘 Facebook**: [Ban Thien Handsome](https://www.facebook.com/Ban.Thien.Handsome/)
-- **📱 Zalo**: 08.8888.4749
+- **📱 Zalo**: 09.8888.0550
 
 ### 🔧 Contributing
 
@@ -690,7 +690,7 @@ Khi báo lỗi, hãy include:
 
 | 🔗 Link | 📝 Mô Tả |
 |---------|-----------|
-| [🎥 YouTube](https://www.youtube.com/@kalvinthiensocial?sub_confirmation=1) | **ĐĂNG KÝ để xem video hướng dẫn!** |
+| [🎥 YouTube](https://www.youtube.com/@MakeMastery88?sub_confirmation=1) | **ĐĂNG KÝ để xem video hướng dẫn!** |
 | [📚 N8N Docs](https://docs.n8n.io/) | Tài liệu chính thức N8N |
 | [📰 Newspaper4k](https://pypi.org/project/newspaper4k/) | Python library để cào tin tức |
 | [🚀 FastAPI](https://fastapi.tiangolo.com/) | Framework cho News API |
@@ -698,6 +698,6 @@ Khi báo lỗi, hãy include:
 
 ---
 
-**🚀 Made with ❤️ by Nguyễn Ngọc Thiện - December 2024**
+**🚀 Made with ❤️ by Trần Văn Nguyên - July 2025**
 
-> 💡 **Đừng quên**: ĐĂNG KÝ [YouTube channel](https://www.youtube.com/@kalvinthiensocial?sub_confirmation=1) để không bỏ lỡ video mới! 🔔
+> 💡 **Đừng quên**: ĐĂNG KÝ [YouTube channel](https://www.youtube.com/@MakeMastery88?sub_confirmation=1) để không bỏ lỡ video mới! 🔔
