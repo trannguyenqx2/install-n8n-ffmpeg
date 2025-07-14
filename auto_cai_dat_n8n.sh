@@ -6,7 +6,7 @@
 # Tác giả: Trần Văn Nguyên
 # YouTube: https://www.youtube.com/@MakeMastery88
 # Zalo: 09.8888.0550
-# Cập nhật: 13/07/2025
+# Cập nhật: 14/07/2025
 #
 # ✨ TÍNH NĂNG MỚI
 #   - ☁️ Tích hợp Backup & Restore qua Google Drive (sử dụng rclone).
@@ -66,7 +66,7 @@ show_banner() {
     echo -e "${CYAN}║${YELLOW} 📺 YouTube: https://www.youtube.com/@MakeMastery88                  ${CYAN}║${NC}"
     echo -e "${CYAN}║${YELLOW} 📱 Zalo: 09.8888.0550                                                   ${CYAN}║${NC}"
     echo -e "${CYAN}║${YELLOW} 🎬 Đăng ký kênh để ủng hộ mình nhé! 🔔                                  ${CYAN}║${NC}"
-    echo -e "${CYAN}║${YELLOW} 📅 Cập nhật: 13/07/2025                                                 ${CYAN}║${NC}"
+    echo -e "${CYAN}║${YELLOW} 📅 Cập nhật: 14/07/2025                                                 ${CYAN}║${NC}"
     echo -e "${CYAN}╚══════════════════════════════════════════════════════════════════════════════╝${NC}"
     echo ""
 }
@@ -1133,8 +1133,8 @@ docker compose restart fastapi</pre>
             <hr style="margin: 30px 0;">
             <p style="text-align: center; color: #7f8c8d;">
                 🚀 Powered by <strong>Newspaper4k</strong> | 
-                👨‍💻 Created by <strong>Nguyễn Ngọc Thiện</strong> | 
-                📺 <a href="https://www.youtube.com/@kalvinthiensocial">YouTube Channel</a>
+                👨‍💻 Created by <strong>Trần Văn Nguyên</strong> | 
+                📺 <a href="https://www.youtube.com/@MakeMastery88">YouTube Channel</a>
             </p>
         </div>
     </body>
@@ -1330,7 +1330,7 @@ services:
       - N8N_METRICS=true
       - N8N_LOG_LEVEL=info
       - N8N_LOG_OUTPUT=console
-      - N8N_USER_FOLDER=/home/node
+      - /home/node
       - N8N_ENCRYPTION_KEY=\${N8N_ENCRYPTION_KEY:-$(openssl rand -hex 32)}
       - DB_TYPE=sqlite
       - DB_SQLITE_DATABASE=/home/node/.n8n/database.sqlite
@@ -1338,7 +1338,7 @@ services:
       - N8N_DISABLE_PRODUCTION_MAIN_PROCESS=false
       - EXECUTIONS_TIMEOUT=3600
       - EXECUTIONS_TIMEOUT_MAX=7200
-      - N8N_EXECUTIONS_DATA_MAX_SIZE=2000MB
+      - N8N_EXECUTIONS_DATA_MAX_SIZE=500MB
       - N8N_BINARY_DATA_TTL=1440
       - N8N_BINARY_DATA_MODE=filesystem
     volumes:
@@ -1388,10 +1388,10 @@ services:
       - N8N_METRICS=true
       - N8N_LOG_LEVEL=info
       - N8N_LOG_OUTPUT=console
-      - N8N_USER_FOLDER=/home/node
+      - N8N_USER_FOLDER=/files
       - N8N_ENCRYPTION_KEY=\${N8N_ENCRYPTION_KEY:-$(openssl rand -hex 32)}
       - DB_TYPE=sqlite
-      - DB_SQLITE_DATABASE=/home/node/.n8n/database.sqlite
+      - DB_SQLITE_DATABASE=/files/database.sqlite
       - N8N_BASIC_AUTH_ACTIVE=false
       - N8N_DISABLE_PRODUCTION_MAIN_PROCESS=false
       - EXECUTIONS_TIMEOUT=3600
@@ -1400,8 +1400,8 @@ services:
       - N8N_BINARY_DATA_TTL=1440
       - N8N_BINARY_DATA_MODE=filesystem
     volumes:
-      - ./files:/home/node/.n8n
-      - ./files/youtube_content_anylystic:/data/youtube_content_anylystic
+      - ./files:/files
+      - ./files/youtube_content_anylystic:/files/youtube_content_anylystic
       - /var/run/docker.sock:/var/run/docker.sock:ro
     networks:
       - n8n_network
@@ -2282,10 +2282,10 @@ show_final_summary() {
     fi
     
     echo -e "${CYAN}🚀 TÁC GIẢ:${NC}"
-    echo -e "  • Tên: ${WHITE}Nguyễn Ngọc Thiện${NC}"
-    echo -e "  • YouTube: ${WHITE}https://www.youtube.com/@kalvinthiensocial?sub_confirmation=1${NC}"
-    echo -e "  • Zalo: ${WHITE}08.8888.4749${NC}"
-    echo -e "  • Cập nhật: ${WHITE}30/06/2025${NC}"
+    echo -e "  • Tên: ${WHITE}Trần Văn Nguyên${NC}"
+    echo -e "  • YouTube: ${WHITE}https://www.youtube.com/@MakeMastery88?sub_confirmation=1${NC}"
+    echo -e "  • Zalo: ${WHITE}09.8888.0550${NC}"
+    echo -e "  • Cập nhật: ${WHITE}14/07/2025${NC}"
     echo ""
     
     echo -e "${YELLOW}🎬 ĐĂNG KÝ KÊNH YOUTUBE ĐỂ ỦNG HỘ MÌNH NHÉ! 🔔${NC}"
