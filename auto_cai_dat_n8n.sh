@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # =============================================================================
-# 🚀 SCRIPT CÀI ĐẶT N8N TỰ ĐỘNG 2025 
+# 🚀 SCRIPT CÀI ĐẶT N8N TỰ ĐỘNG 2025 - Bản dùng GPU
 # =============================================================================
-# Tác giả: Trần Văn Nguyên
+# Tác giả: Trần Văn Nguyên 
 # YouTube: https://www.youtube.com/@MakeMastery88
-# Zalo: 09.8888.0550
-# Cập nhật: 14/07/2025
+# Zalo: https://zalo.me/g/pyfonl955
+# Cập nhật: 01/07/2025
 #
 # ✨ TÍNH NĂNG MỚI
 #   - ☁️ Tích hợp Backup & Restore qua Google Drive (sử dụng rclone).
@@ -63,10 +63,10 @@ show_banner() {
     echo -e "${CYAN}║${WHITE} 🔑 Gỡ bỏ giới hạn Bearer Token (độ dài, ký tự đặc biệt)                   ${CYAN}║${NC}"
     echo -e "${CYAN}╠══════════════════════════════════════════════════════════════════════════════╣${NC}"
     echo -e "${CYAN}║${YELLOW} 👨‍💻 Tác giả: Trần Văn Nguyên (Original) & v0 (Upgraded)                  ${CYAN}║${NC}"
-    echo -e "${CYAN}║${YELLOW} 📺 YouTube: https://www.youtube.com/@MakeMastery88                  ${CYAN}║${NC}"
+    echo -e "${CYAN}║${YELLOW} 📺 YouTube: https://www.youtube.com/@kalvinthiensocial                  ${CYAN}║${NC}"
     echo -e "${CYAN}║${YELLOW} 📱 Zalo: 09.8888.0550                                                   ${CYAN}║${NC}"
     echo -e "${CYAN}║${YELLOW} 🎬 Đăng ký kênh để ủng hộ mình nhé! 🔔                                  ${CYAN}║${NC}"
-    echo -e "${CYAN}║${YELLOW} 📅 Cập nhật: 14/07/2025                                                 ${CYAN}║${NC}"
+    echo -e "${CYAN}║${YELLOW} 📅 Cập nhật: 30/06/2025                                                 ${CYAN}║${NC}"
     echo -e "${CYAN}╚══════════════════════════════════════════════════════════════════════════════╝${NC}"
     echo ""
 }
@@ -1133,8 +1133,8 @@ docker compose restart fastapi</pre>
             <hr style="margin: 30px 0;">
             <p style="text-align: center; color: #7f8c8d;">
                 🚀 Powered by <strong>Newspaper4k</strong> | 
-                👨‍💻 Created by <strong>Trần Văn Nguyên</strong> | 
-                📺 <a href="https://www.youtube.com/@MakeMastery88">YouTube Channel</a>
+                👨‍💻 Created by <strong>Nguyễn Ngọc Thiện</strong> | 
+                📺 <a href="https://www.youtube.com/@kalvinthiensocial">YouTube Channel</a>
             </p>
         </div>
     </body>
@@ -1330,7 +1330,7 @@ services:
       - N8N_METRICS=true
       - N8N_LOG_LEVEL=info
       - N8N_LOG_OUTPUT=console
-      - /home/node
+      - N8N_USER_FOLDER=/home/node
       - N8N_ENCRYPTION_KEY=\${N8N_ENCRYPTION_KEY:-$(openssl rand -hex 32)}
       - DB_TYPE=sqlite
       - DB_SQLITE_DATABASE=/home/node/.n8n/database.sqlite
@@ -1338,13 +1338,20 @@ services:
       - N8N_DISABLE_PRODUCTION_MAIN_PROCESS=false
       - EXECUTIONS_TIMEOUT=3600
       - EXECUTIONS_TIMEOUT_MAX=7200
-      - N8N_EXECUTIONS_DATA_MAX_SIZE=500MB
+      - N8N_EXECUTIONS_DATA_MAX_SIZE=2000MB
       - N8N_BINARY_DATA_TTL=1440
       - N8N_BINARY_DATA_MODE=filesystem
     volumes:
       - ./files:/home/node/.n8n
       - ./files/youtube_content_anylystic:/data/youtube_content_anylystic
       - /var/run/docker.sock:/var/run/docker.sock:ro
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
     networks:
       - n8n_network
 EOF
@@ -1388,10 +1395,10 @@ services:
       - N8N_METRICS=true
       - N8N_LOG_LEVEL=info
       - N8N_LOG_OUTPUT=console
-      - N8N_USER_FOLDER=/files
+      - N8N_USER_FOLDER=/home/node
       - N8N_ENCRYPTION_KEY=\${N8N_ENCRYPTION_KEY:-$(openssl rand -hex 32)}
       - DB_TYPE=sqlite
-      - DB_SQLITE_DATABASE=/files/database.sqlite
+      - DB_SQLITE_DATABASE=/home/node/.n8n/database.sqlite
       - N8N_BASIC_AUTH_ACTIVE=false
       - N8N_DISABLE_PRODUCTION_MAIN_PROCESS=false
       - EXECUTIONS_TIMEOUT=3600
@@ -1400,9 +1407,16 @@ services:
       - N8N_BINARY_DATA_TTL=1440
       - N8N_BINARY_DATA_MODE=filesystem
     volumes:
-      - ./files:/files
-      - ./files/youtube_content_anylystic:/files/youtube_content_anylystic
+      - ./files:/home/node/.n8n
+      - ./files/youtube_content_anylystic:/data/youtube_content_anylystic
       - /var/run/docker.sock:/var/run/docker.sock:ro
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
     networks:
       - n8n_network
 
@@ -2284,8 +2298,8 @@ show_final_summary() {
     echo -e "${CYAN}🚀 TÁC GIẢ:${NC}"
     echo -e "  • Tên: ${WHITE}Trần Văn Nguyên${NC}"
     echo -e "  • YouTube: ${WHITE}https://www.youtube.com/@MakeMastery88?sub_confirmation=1${NC}"
-    echo -e "  • Zalo: ${WHITE}09.8888.0550${NC}"
-    echo -e "  • Cập nhật: ${WHITE}14/07/2025${NC}"
+    echo -e "  • Zalo: ${WHITE}https://zalo.me/g/pyfonl955${NC}"
+    echo -e "  • Cập nhật: ${WHITE}01/07/2025${NC}"
     echo ""
     
     echo -e "${YELLOW}🎬 ĐĂNG KÝ KÊNH YOUTUBE ĐỂ ỦNG HỘ MÌNH NHÉ! 🔔${NC}"
